@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the About section */
+        .about-section {
+            background-color: #000; /* Black background to match the image */
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about-section img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+
+        .project-image {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+    
+
+     /* Custom styles for the Skills section */
+     .skill-icon {
+        padding: 20px; /* Add padding around your images if needed */
+        background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+        height: 180px; /* Fixed height for consistency */
+        object-fit: contain;
+    }
+
+    
+    .skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+
+        .card-footer {
+            background-color: transparent;
+            border-top: none;
+        }
+
+        .btn-outline-primary {
+            width: 100%;
+        }
+
+
+        .tool-icon {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-top: 20px;
+    }
+
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+    .contact-icon:hover {
+        transform: scale(1.2);
+    }
+
+   
+
+    .contact-section {
+  padding: 50px 0;
+
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+
+
+    .navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+    
+}
+    </style>
+</head>
+<body>
+    <!-- About Section Start -->
+    <section class="about-section">
+        <div class="container">
+            <img src="images/about/56b2h84i.png" alt="Personal Image">
+            <h2>About Me</h2>
+            <p>
+                Salut ! Je suis Buani. Je transforme les données en décisions éclairées et j'automatise les tâches pour gagner en efficacité. J'ai de l'expérience en machine learning, en modélisation statistique et en bases de données. J'ai réalisé des études d'ingénieur en informatique et mathématiques appliquées à Polytech Lille
+            </p>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+<!-- Projects Section Start -->
+<section class="projects-section py-5 bg-light text-dark" id="projects">
+    <div class="container">
+        <h2 class="text-center mb-5">My Projects</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card bg-light text-dark h-100">
+                    <img src="images/projects/1_5RrShFp_plOon8zAffKzSw.jpg" class="card-img-top project-image" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Detection automatique d'émotions dans la voix</h5>
+                        <p class="card-text">Ce projet a consisté à implémenter un modèle de détection d'émotions dans le signal de la voix. 
+                            Il s'agit de la première étape d'un projet visant à développer une application pour la préparation d'entretiens RH.
+                            
+                        </p>
+                        <a href="#" class="btn btn-primary">Blog Post</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light text-dark h-100">
+                    <img src="images/projects/63440d4add9f1c05273c8978_11 best task automation tools to speed up your scut work-p-1600.png" class="card-img-top project-image" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Data gouvernance et automatisation de tâches via une application web </h5>
+                        <p class="card-text">Ce projet a consisté à mettre en place une application web permettant aux utilisateurs d'éffectuer des requetes Mysql sans connaissance technique pour les appuyer dans leurs tâches quotidiennes.
+                             </p>
+                        <a href="#" class="btn btn-primary">Blog Post</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light text-dark h-100">
+                    <img src="images/projects/customer_clustering_motorcycle_conductors.png" class="card-img-top project-image" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Analyse de la satisfaction d'utilisateurs de scooters</h5>
+                        <p class="card-text">Ce projet a permis de segmenter les utilisateurs de scooters selon divers indicateurs propres à eux et aux scooters  
+                            afin de leur proposer une meilleure offre de produits.
+                            </p>
+                        <a href="#" class="btn btn-primary">Blog Post</a> 
+                        <a href="https://github.com/buanide/Statistical-Modelling" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section Start -->
+    <!-- Skills Section Start -->
+    <section class="skills-section py-5 bg-light text-dark" id="skills">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="images/skills/statisitics.png" class="card-img-top skill-icon" alt="Python">
+                        <div class="card-body">
+                            <h5 class="card-title">Statistiques</h5>
+                            <p class="card-text">Décrire, analyser et interpréter les données</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="images/skills/ml.jpg" class="card-img-top skill-icon" alt="Data Visualization">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine learning</h5>
+                            <p class="card-text">Automatiser des tâches sans intervention humaine</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="images/skills/Data-Management.jpg" class="card-img-top skill-icon" alt="SQL">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestion de base données</h5>
+                            <p class="card-text">Collecter, Nettoyer, Mettre à Disposition</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="images/skills/story_telling.png" class="card-img-top skill-icon" alt="Data Storytelling">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Storytelling</h5>
+                            <p class="card-text">Vulgariser, Captiver, Aider à la prise de décision</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Skills Section End -->
+
+
+
+ <!-- Tools Section Start -->
+<section class="tools-section py-5 bg-light text-dark" skills="tools">
+    <div class="container">
+        <h2 class="text-center mb-5">Tools</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card bg-light text-dark h-100 text-center">
+                    <img src="images/tools/Python.png" class="card-img-top skill-icon" alt="Python">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light text-dark h-100 text-center">
+                    <img src="images/tools/Excel-365Excel-2016-2019-Logo.png" class="card-img-top skill-icon" alt="Excel">
+                    <div class="card-body">
+                        <h5 class="card-title">Excel</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light text-dark h-100 text-center">
+                    <img src="images/tools/Logo-Tableau.png" class="card-img-top skill-icon" alt="Tableau">
+                    <div class="card-body">
+                        <h5 class="card-title">Tableau</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light text-dark h-100 text-center">
+                    <img src="images/tools/SQL.png" class="card-img-top skill-icon" alt="SQL">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Tools Section End -->
+
+
+
+<!-- Contact Me Section Start -->
+<section class="contact-section text-center text-white bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row">
+            <div class="col-lg-6">
+              <p><i class="fas fa-envelope"></i> dokiengoue@gmail.com</p>
+            </div>
+            <div class="col-lg-6">
+              <p><i class="fas fa-phone"></i> +33786495345</p>
+            </div>
+          </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="icons/linkedin.png" class="contact-icon mx-3" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="https://www.github.com" target="_blank">
+                    <img src="icons/github.png" class="contact-icon mx-3" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Me Section End -->
+
+
+
+<!-- Sticky Navigation Bar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#home">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tools">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Sticky Navigation Bar End -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
