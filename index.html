@@ -33,6 +33,11 @@
         }
 
 
+        .about-section .row.justify-content-center {
+    height: 60px;  /* You can adjust the height value as needed */
+} 
+
+
         .project-image {
         height: 200px;
         object-fit: cover;
@@ -40,7 +45,6 @@
     }
 
 
-    
 
      /* Custom styles for the Skills section */
      .skill-icon {
@@ -54,8 +58,6 @@
     .skills-section .card {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
-
 
         .card-footer {
             background-color: transparent;
@@ -74,6 +76,31 @@
         margin-top: 20px;
     }
 
+     /* Social media icons */
+     .social-icons {
+            position: absolute;
+            top: 30%;
+            left: 10%;  /* Adjust as per your design */
+            transform: translateY(-50%);
+        }
+
+        .social-icons a {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;  /* Adjust icon size */
+            height: 40px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);  /* Hover effect to slightly enlarge the icon */
+        }
+
 
     .contact-icon {
         width: 50px;
@@ -86,7 +113,6 @@
         transform: scale(1.2);
     }
 
-   
 
     .contact-section {
   padding: 50px 0;
@@ -129,12 +155,21 @@ html {
 <body>
     <!-- About Section Start -->
     <section class="about-section">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank">
+                    <img src="icons/linkedin.png" class="contact-icon mx-3" alt="LinkedIn">
+                </a>
+            <a href="https://www.github.com" target="_blank">
+                <img src="icons/git_white.jpg" alt="GitHub">
+            </a>
+        </div>
         <div class="container">
             <img src="images/about/56b2h84i.png" alt="Personal Image">
             <h2>About Me</h2>
             <p>
-                Salut ! Je suis Buani. Je transforme les données en décisions éclairées et j'automatise les tâches pour gagner en efficacité. J'ai de l'expérience en machine learning, en modélisation statistique et en bases de données. J'ai réalisé des études d'ingénieur en informatique et mathématiques appliquées à Polytech Lille
+                Salut ! Je suis Buani. Je transforme les données en décisions éclairées et j'automatise les tâches pour gagner en efficacité. J'ai de l'expérience en machine learning, en modélisation statistique et en bases de données. J'ai réalisé des études d'ingénieur en informatique et mathématiques appliquées à Polytech Lille.
             </p>
+            </div>
         </div>
     </section>
     <!-- About Section End -->
@@ -148,13 +183,14 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/1_5RrShFp_plOon8zAffKzSw.jpg" class="card-img-top project-image" alt="Project 1">
                     <div class="card-body">
-                        <h5 class="card-title">Detection automatique d'émotions dans la voix</h5>
-                        <p class="card-text">Ce projet a consisté à implémenter un modèle de détection d'émotions dans le signal de la voix. 
-                            Il s'agit de la première étape d'un projet visant à développer une application pour la préparation d'entretiens RH.
+                        <h5 class="card-title">Speech Emotion Recognition</h5>
+                        <p class="card-text">This project involved developing an emotion detection model using voice signals. 
+                            This initial phase is part of a larger project aimed at creating a tool to assist with HR interview preparation
                             
                         </p>
                         <a href="#" class="btn btn-primary">Blog Post</a>
                         <a href="#" class="btn btn-secondary">Source Code</a>
+                        <p class="text-muted mt-2"><small>Links to the project are not available yet.</small></p>
                     </div>
                 </div>
             </div>
@@ -162,11 +198,13 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/63440d4add9f1c05273c8978_11 best task automation tools to speed up your scut work-p-1600.png" class="card-img-top project-image" alt="Project 2">
                     <div class="card-body">
-                        <h5 class="card-title">Data gouvernance et automatisation de tâches via une application web </h5>
-                        <p class="card-text">Ce projet a consisté à mettre en place une application web permettant aux utilisateurs d'éffectuer des requetes Mysql sans connaissance technique pour les appuyer dans leurs tâches quotidiennes.
+                        <h5 class="card-title"> Web application for Data gouvernance and task automation  </h5>
+                        <p class="card-text">I developed a web application that enables users to run MySQL queries without 
+                            requiring any technical expertise, thereby assisting them with their day-to-day work.
                              </p>
                         <a href="#" class="btn btn-primary">Blog Post</a>
                         <a href="#" class="btn btn-secondary">Source Code</a>
+                        <p class="text-muted mt-2"><small>Links to the project are not available yet.</small></p>
                     </div>
                 </div>
             </div>
@@ -174,12 +212,13 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/customer_clustering_motorcycle_conductors.png" class="card-img-top project-image" alt="Project 3">
                     <div class="card-body">
-                        <h5 class="card-title">Analyse de la satisfaction d'utilisateurs de scooters</h5>
-                        <p class="card-text">Ce projet a permis de segmenter les utilisateurs de scooters selon divers indicateurs propres à eux et aux scooters  
-                            afin de leur proposer une meilleure offre de produits.
+                        <h5 class="card-title">Statistical analysis of scooter user satisfaction</h5>
+                        <p class="card-text">By segmenting scooter users based on tailored indicators, 
+                            this project enabled us to provide more personalized product offerings
                             </p>
                         <a href="#" class="btn btn-primary">Blog Post</a> 
                         <a href="https://github.com/buanide/Statistical-Modelling" class="btn btn-secondary">Source Code</a>
+                        <p class="text-muted mt-2"><small>Only the blog to the project is available yet.</small></p>
                     </div>
                 </div>
             </div>
@@ -198,12 +237,10 @@ html {
                     <div class="card h-100 text-center">
                         <img src="images/skills/statisitics.png" class="card-img-top skill-icon" alt="Python">
                         <div class="card-body">
-                            <h5 class="card-title">Statistiques</h5>
-                            <p class="card-text">Décrire, analyser et interpréter les données</p>
+                            <h5 class="card-title">Statistics</h5>
+                            <p class="card-text">Describe, analyse and interpret datas</p>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="col">
@@ -211,23 +248,19 @@ html {
                         <img src="images/skills/ml.jpg" class="card-img-top skill-icon" alt="Data Visualization">
                         <div class="card-body">
                             <h5 class="card-title">Machine learning</h5>
-                            <p class="card-text">Automatiser des tâches sans intervention humaine</p>
+                            <p class="card-text">Teach machines to do tasks without human intervention</p>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 text-center">
                         <img src="images/skills/Data-Management.jpg" class="card-img-top skill-icon" alt="SQL">
                         <div class="card-body">
-                            <h5 class="card-title">Gestion de base données</h5>
-                            <p class="card-text">Collecter, Nettoyer, Mettre à Disposition</p>
+                            <h5 class="card-title">Data Management</h5>
+                            <p class="card-text">Collect, Clean, Deliver</p>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col">
@@ -235,11 +268,11 @@ html {
                         <img src="images/skills/story_telling.png" class="card-img-top skill-icon" alt="Data Storytelling">
                         <div class="card-body">
                             <h5 class="card-title">Data Storytelling</h5>
-                            <p class="card-text">Vulgariser, Captiver, Aider à la prise de décision</p>
+                            <p class="card-text">Simplify, Attract, Decision making support</p>
                         </div>
-                        <div class="card-footer">
+                       <!-- <div class="card-footer">
                             <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -297,31 +330,29 @@ html {
 <section class="contact-section text-center text-white bg-dark">
     <div class="container">
         <h2 class="text-center mb-5">Contact Me</h2>
-        <div class="row">
-            <div class="col-lg-6">
-              <p><i class="fas fa-envelope"></i> dokiengoue@gmail.com</p>
+            <div class="row">
+                <div class="col-lg-6">
+                <p><i class="fas fa-envelope"></i> dokiengoue@gmail.com</p>
+                </div>
+                <div class="col-lg-6">
+                <p><i class="fas fa-phone"></i> +33786495345</p>
+                </div>
             </div>
-            <div class="col-lg-6">
-              <p><i class="fas fa-phone"></i> +33786495345</p>
-            </div>
-          </div>
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img src="icons/linkedin.png" class="contact-icon mx-3" alt="LinkedIn">
-                </a>
-            </div>
-            <div class="col-auto">
-                <a href="https://www.github.com" target="_blank">
-                    <img src="icons/github.png" class="contact-icon mx-3" alt="GitHub">
-                </a>
-            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="icons/linkedin.png" class="contact-icon mx-3" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://www.github.com" target="_blank">
+                        <img src="icons/github.png" class="contact-icon mx-3" alt="GitHub">
+                    </a>
+                </div>
         </div>
     </div>
 </section>
 <!-- Contact Me Section End -->
-
-
 
 <!-- Sticky Navigation Bar Start -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
