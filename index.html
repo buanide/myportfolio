@@ -69,9 +69,9 @@
         }
 
 
-        .tool-icon {
-        width: 80px;
-        height: 80px;
+        .tool .col {
+        width: 30px;
+        height: 30px;
         object-fit: contain;
         margin-top: 20px;
     }
@@ -80,7 +80,7 @@
      .social-icons {
             position: absolute;
             top: 30%;
-            left: 10%;  /* Adjust as per your design */
+            left: 8%;  /* Adjust as per your design */
             transform: translateY(-50%);
         }
 
@@ -154,20 +154,24 @@ html {
 </head>
 <body>
     <!-- About Section Start -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="social-icons">
-            <a href="https://www.linkedin.com" target="_blank">
+            <a href="https://www.linkedin.com/in/buani-doki-engoue-31b903193" target="_blank">
                     <img src="icons/linkedin.png" class="contact-icon mx-3" alt="LinkedIn">
                 </a>
-            <a href="https://www.github.com" target="_blank">
+            <a href="https://github.com/buanide" target="_blank">
                 <img src="icons/git_white.jpg" alt="GitHub">
+            </a>
+
+            <a href="file/CV_Buani.pdf" target="_blank">
+                <img src="icons/cv-icon-11.jpg" alt="Cv">
             </a>
         </div>
         <div class="container">
             <img src="images/about/56b2h84i.png" alt="Personal Image">
             <h2>About Me</h2>
             <p>
-                Salut ! Je suis Buani. Je transforme les données en décisions éclairées et j'automatise les tâches pour gagner en efficacité. J'ai de l'expérience en machine learning, en modélisation statistique et en bases de données. J'ai réalisé des études d'ingénieur en informatique et mathématiques appliquées à Polytech Lille.
+                Hi! I am Buani . I transform your data into actionable insights and automate tasks to gain productivity. I have some exeprience in machine learning, statistical modelling and databases.
             </p>
             </div>
         </div>
@@ -183,10 +187,9 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/1_5RrShFp_plOon8zAffKzSw.jpg" class="card-img-top project-image" alt="Project 1">
                     <div class="card-body">
-                        <h5 class="card-title">Speech Emotion Recognition</h5>
+                        <h5 class="card-title">Speech Emotion Recognition, Efrei Research Lab</h5>
                         <p class="card-text">This project involved developing an emotion detection model using voice signals. 
-                            This initial phase is part of a larger project aimed at creating a tool to assist with HR interview preparation
-                            
+                            This initial phase is part of a larger project aimed at creating a digital healthcare tool.                        
                         </p>
                         <a href="#" class="btn btn-primary">Blog Post</a>
                         <a href="#" class="btn btn-secondary">Source Code</a>
@@ -198,7 +201,7 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/63440d4add9f1c05273c8978_11 best task automation tools to speed up your scut work-p-1600.png" class="card-img-top project-image" alt="Project 2">
                     <div class="card-body">
-                        <h5 class="card-title"> Web application for Data gouvernance and task automation  </h5>
+                        <h5 class="card-title"> Web application for Data governance and task automation, Orange Cameroon  </h5>
                         <p class="card-text">I developed a web application that enables users to run MySQL queries without 
                             requiring any technical expertise, thereby assisting them with their day-to-day work.
                              </p>
@@ -212,13 +215,13 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/customer_clustering_motorcycle_conductors.png" class="card-img-top project-image" alt="Project 3">
                     <div class="card-body">
-                        <h5 class="card-title">Statistical analysis of scooter user satisfaction</h5>
-                        <p class="card-text">By segmenting scooter users based on tailored indicators, 
-                            this project enabled us to provide more personalized product offerings
+                        <h5 class="card-title">Statistical analysis of scooter user satisfaction, Polytech' Lille</h5>
+                        <p class="card-text">By segmenting scooter users based on tailored indicators, such as gender, and engine size, 
+                            we gave insights to provide more personalized product offerings that will increase customer satisfaction.
                             </p>
                         <a href="#" class="btn btn-primary">Blog Post</a> 
                         <a href="https://github.com/buanide/Statistical-Modelling" class="btn btn-secondary">Source Code</a>
-                        <p class="text-muted mt-2"><small>Only the blog to the project is available yet.</small></p>
+                        <p class="text-muted mt-2"><small>The blog is not done.</small></p>
                     </div>
                 </div>
             </div>
@@ -238,7 +241,7 @@ html {
                         <img src="images/skills/statisitics.png" class="card-img-top skill-icon" alt="Python">
                         <div class="card-body">
                             <h5 class="card-title">Statistics</h5>
-                            <p class="card-text">Describe, analyse and interpret datas</p>
+                            <p class="card-text">Describe, analyse and interpret data</p>
                         </div>
                        
                     </div>
@@ -283,7 +286,7 @@ html {
 
 
  <!-- Tools Section Start -->
-<section class="tools-section py-5 bg-light text-dark" skills="tools">
+<section class="tools-section py-5 bg-light text-dark" skills="tools" id="tools">
     <div class="container">
         <h2 class="text-center mb-5">Tools</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -327,7 +330,7 @@ html {
 
 
 <!-- Contact Me Section Start -->
-<section class="contact-section text-center text-white bg-dark">
+<section class="contact-section text-center text-white bg-dark" id="contact">
     <div class="container">
         <h2 class="text-center mb-5">Contact Me</h2>
             <div class="row">
@@ -340,12 +343,12 @@ html {
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <a href="https://www.linkedin.com" target="_blank">
+                    <a href="https://www.linkedin.com/in/buani-doki-engoue-31b903193" target="_blank">
                         <img src="icons/linkedin.png" class="contact-icon mx-3" alt="LinkedIn">
                     </a>
                 </div>
                 <div class="col-auto">
-                    <a href="https://www.github.com" target="_blank">
+                    <a href="https://github.com/buanide" target="_blank">
                         <img src="icons/github.png" class="contact-icon mx-3" alt="GitHub">
                     </a>
                 </div>
@@ -363,9 +366,6 @@ html {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
