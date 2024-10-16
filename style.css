@@ -1,0 +1,153 @@
+/* Custom styles for the About section */
+.about-section {
+    background-color: #000; /* Black background to match the image */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-section img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.about-section .row.justify-content-center {
+height: 60px;  /* You can adjust the height value as needed */
+} 
+
+
+.project-image {
+height: 200px;
+object-fit: cover;
+width: 100%;
+}
+
+
+
+/* Custom styles for the Skills section */
+.skill-icon {
+padding: 20px; /* Add padding around your images if needed */
+background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+height: 180px; /* Fixed height for consistency */
+object-fit: contain;
+}
+
+
+.skills-section .card {
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+.btn-outline-primary {
+    width: 100%;
+}
+
+
+.tool .col {
+width: 30px;
+height: 30px;
+object-fit: contain;
+margin-top: 20px;
+}
+
+/* Social media icons */
+.social-icons {
+    position: absolute;
+    top: 30%;
+    left: 8%;  /* Adjust as per your design */
+    transform: translateY(-50%);
+}
+
+.social-icons a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 40px;  /* Adjust icon size */
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);  /* Hover effect to slightly enlarge the icon */
+}
+
+
+.contact-icon {
+width: 50px;
+height: 50px;
+object-fit: contain;
+transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+transform: scale(1.2);
+}
+
+
+.contact-section {
+padding: 50px 0;
+
+}
+.contact-section h2 {
+font-size: 2.5rem;
+margin-bottom: 40px;
+}
+.contact-section p {
+font-size: 1.2rem;
+margin-bottom: 20px;
+}
+
+.contact-section a {
+color: #fff;
+text-decoration: none; /* Removes underline from links */
+display: inline-block; /* Allows for margin on the bottom */
+margin-bottom: 10px;
+}
+
+
+.navbar {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+cursor: pointer;
+}
+
+.tool-logo {
+    width: 40px !important;  /* Ajuste la taille ici selon tes préférences */
+    height:40px !important ;
+}
+
+.tool-icons {
+    margin-top: 20px;
+}
+
+
+
+/* Smooth Scrolling */
+html {
+scroll-behavior: smooth;
+
+}

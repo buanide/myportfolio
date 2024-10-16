@@ -3,156 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title data-lang="en">My Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom styles for the About section */
-        .about-section {
-            background-color: #000; /* Black background to match the image */
-            color: #fff;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .about-section img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        .about-section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .about-section p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-
-        .about-section .row.justify-content-center {
-    height: 60px;  /* You can adjust the height value as needed */
-} 
-
-
-        .project-image {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-    }
-
-
-
-     /* Custom styles for the Skills section */
-     .skill-icon {
-        padding: 20px; /* Add padding around your images if needed */
-        background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-        height: 180px; /* Fixed height for consistency */
-        object-fit: contain;
-    }
-
-    
-    .skills-section .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-        .card-footer {
-            background-color: transparent;
-            border-top: none;
-        }
-
-        .btn-outline-primary {
-            width: 100%;
-        }
-
-
-        .tool .col {
-        width: 30px;
-        height: 30px;
-        object-fit: contain;
-        margin-top: 20px;
-    }
-
-     /* Social media icons */
-     .social-icons {
-            position: absolute;
-            top: 30%;
-            left: 8%;  /* Adjust as per your design */
-            transform: translateY(-50%);
-        }
-
-        .social-icons a {
-            display: block;
-            margin-bottom: 20px;
-        }
-
-        .social-icons img {
-            width: 40px;  /* Adjust icon size */
-            height: 40px;
-            object-fit: contain;
-            transition: transform 0.3s ease;
-            border-radius: 8px;
-        }
-
-        .social-icons img:hover {
-            transform: scale(1.2);  /* Hover effect to slightly enlarge the icon */
-        }
-
-
-    .contact-icon {
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-    }
-
-    .contact-icon:hover {
-        transform: scale(1.2);
-    }
-
-
-    .contact-section {
-  padding: 50px 0;
-
-}
-.contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-.contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.contact-section a {
-  color: #fff;
-  text-decoration: none; /* Removes underline from links */
-  display: inline-block; /* Allows for margin on the bottom */
-  margin-bottom: 10px;
-}
-
-
-    .navbar {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.nav-link {
-    cursor: pointer;
-}
-
-
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-    
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
     <!-- About Section Start -->
     <section class="about-section" id="about">
         <div class="social-icons">
@@ -170,10 +27,22 @@ html {
         <div class="container">
             <img src="images/about/56b2h84i.png" alt="Personal Image">
             <h2>About Me</h2>
-            <p>
+            <p data-lang="en">
                 Hi! I am Buani . I transform your data into actionable insights and automate tasks to gain productivity. I have some exeprience in machine learning, statistical modelling and databases.
             </p>
+
+            <p data-lang="fr" style="display: none;">
+                Bonjour ! Je suis Buani. Je transforme vos données en informations exploitables et automatise les tâches pour gagner en productivité.
+            </p>
             </div>
+
+            <div class="tool-icons text-center mt-4">
+                <img src="images/tools/Excel-365Excel-2016-2019-Logo.png" alt="Excel" class="tool-logo mx-2">
+                <img src="images/tools/Python.png" alt="Python" class="tool-logo mx-2">
+                <img src="images/tools/Logo-Tableau.png" alt="Tableau" class="tool-logo mx-2">
+                <img src="images/tools/SQL.png" alt="SQL" class="tool-logo mx-2">
+            </div>
+
         </div>
     </section>
     <!-- About Section End -->
@@ -181,7 +50,9 @@ html {
 <!-- Projects Section Start -->
 <section class="projects-section py-5 bg-light text-dark" id="projects">
     <div class="container">
-        <h2 class="text-center mb-5">My Projects</h2>
+        <h2 data-lang="en" class="text-center mb-5">My Projects</h2>
+
+        <h2 data-lang="fr" class="text-center mb-5" style="display: none;">Mes projets</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- <div class="card-footer"><div class="col">
                 <div class="card bg-light text-dark h-100">
@@ -202,12 +73,22 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/customer_clustering_motorcycle_conductors.png" class="card-img-top project-image" alt="Project 3">
                     <div class="card-body">
-                        <h5 class="card-title">Statistical analysis of scooter user satisfaction, Polytech' Lille</h5>
-                        <p class="card-text">By segmenting scooter users based on tailored indicators, such as gender, and engine size, 
+                        <h5 data-lang="en" class="card-title">Statistical analysis of scooter user satisfaction, Polytech' Lille</h5>
+                        
+                        <h5 data-lang="fr" class="card-title" style="display: none;">
+                            Etude Statistique de la satisfaction d'utilisateurs de scooter, Polytech Lille
+                        </h5>
+                        
+                        <p data-lang="en" class="card-text">By segmenting scooter users based on tailored indicators, such as gender, and engine size, 
                             we gave insights to provide more personalized product offerings that will increase customer satisfaction.
                             </p>
-                        <a href="https://github.com/buanide/Statistical-Modelling" class="btn btn-primary">Link to the project</a>
-                   
+
+                            <p data-lang="fr"  style="display: none;">
+                                En segmentant les utilisateurs de scooters en fonction d'indicateurs adaptés, tels que le genre et la taille du moteur, nous avons fourni des analyses permettant de proposer 
+                                 des offres de produits plus personnalisées, ce qui augmentera la satisfaction des clients.
+                            </p>
+                        <a data-lang="en" href="https://github.com/buanide/Statistical-Modelling" class="btn btn-primary">Link to the project</a>
+                        <a data-lang="fr" style="display: none;" href="https://github.com/buanide/Statistical-Modelling" class="btn btn-primary">Lien vers le projet</a>
                     </div>
                 </div>
             </div>
@@ -215,11 +96,17 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/data_visualisation_water.png" class="card-img-top project-image" alt="Project 3">
                     <div class="card-body">
-                        <h5 class="card-title">Water access for all, Polytech' Lille</h5>
-                        <p class="card-text">I developed three dashboards to assess water needs at national, continental, and global levels. The objective was to identify a country that would most benefit from financial aid to improve water access, based on the analysis of key critical indicators.
-                    
-                            </p>
-                        <a href="https://public.tableau.com/app/profile/buani.doki.engoue/viz/Waterforeveryone/Histoire1" class="btn btn-primary">Link to the project</a>
+                        <h5 data-lang="en" class="card-title">Water access for all, Polytech' Lille</h5>
+
+                        <h5 data-lang="fr" class="card-title" style="display: none;">L'accès à l'eau pour tous, Polytech' Lille</h5>
+
+                        <p data-lang="en" class="card-text">I developed three dashboards to assess water needs at national, continental, and global levels. The objective was to identify a country that would most benefit from financial aid to improve water access, based on the analysis of key critical indicators.
+                     
+                        <p data-lang="fr" class="card-text" style="display: none;" >J'ai développé trois tableaux de bord pour évaluer les besoins en eau aux niveaux national, continental et mondial. L'objectif était d'identifier un pays qui bénéficierait le plus d'une aide financière pour améliorer l'accès à l'eau, basé sur l'analyse d'indicateurs critiques clés.</p>
+
+                        <a data-lang="en" href="https://public.tableau.com/app/profile/buani.doki.engoue/viz/Waterforeveryone/Histoire1" class="btn btn-primary">Link to the project</a>
+
+                        <a data-lang="fr" style="display: none;"  href="https://public.tableau.com/app/profile/buani.doki.engoue/viz/Waterforeveryone/Histoire1" class="btn btn-primary">Lien vers le projet</a>
                     </div>
                 </div>
             </div>
@@ -228,12 +115,20 @@ html {
                 <div class="card bg-light text-dark h-100">
                     <img src="images/projects/1_5RrShFp_plOon8zAffKzSw.jpg" class="card-img-top project-image" alt="Project 1">
                     <div class="card-body">
-                        <h5 class="card-title">Speech Emotion Recognition, Efrei Research Lab</h5>
-                        <p class="card-text">This project involved developing an emotion detection model using voice signals . 
+                        <h5 data-lang="en" class="card-title">Speech Emotion Recognition, Efrei Research Lab</h5>
+                        <p data-lang="en" class="card-text">This project involved developing an emotion detection model using voice signals . 
                             This initial phase is part of a larger project aimed at creating a digital healthcare tool.                       
                         </p>
-                        <a href="#" class="btn btn-primary"> Link to the project</a>
-                        <p class="text-muted mt-2"><small>Link to the project is not available yet.</small></p>
+                        <a data-lang="en" href="#" class="btn btn-primary"> Link to the project</a>
+                        <p data-lang="en" class="text-muted mt-2"><small>Link to the project is not available yet.</small></p>
+
+                        <h5 data-lang="fr"  class="card-title" style="display: none;">Reconnaissance des émotions dans la voix, Efrei Research Lab</h5>
+                        <p data-lang="fr" class="card-text" style="display: none;">Ce projet consistait à développer un modèle de détection des émotions à partir des signaux vocaux. 
+                            Cette phase initiale fait partie d'un projet plus large visant à créer un outil de santé numérique.                       
+                        </p>
+                        <a data-lang="fr" href="#" class="btn btn-primary" style="display: none;">Lien vers le projet</a>
+                        <p data-lang="fr" class="text-muted mt-2" style="display: none;"><small>Le lien vers le projet n'est pas encore disponible.</small></p>
+
                     </div>
                 </div>
             </div>
@@ -242,102 +137,8 @@ html {
 </section>
 
 
-<!-- Skills Section Start -->
-    <!-- Skills Section Start -->
-    <section class="skills-section py-5 bg-light text-dark" id="skills">
-        <div class="container">
-            <h2 class="text-center mb-5">Skills</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <img src="images/skills/statisitics.png" class="card-img-top skill-icon" alt="Python">
-                        <div class="card-body">
-                            <h5 class="card-title">Statistics</h5>
-                            <p class="card-text">Describe, analyse and interpret data</p>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <img src="images/skills/ml.jpg" class="card-img-top skill-icon" alt="Data Visualization">
-                        <div class="card-body">
-                            <h5 class="card-title">Machine learning</h5>
-                            <p class="card-text">Teach machines to do tasks without human intervention</p>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <img src="images/skills/Data-Management.jpg" class="card-img-top skill-icon" alt="SQL">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Management</h5>
-                            <p class="card-text">Collect, Clean, Deliver</p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <img src="images/skills/story_telling.png" class="card-img-top skill-icon" alt="Data Storytelling">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Storytelling</h5>
-                            <p class="card-text">Simplify, Attract, Decision making support</p>
-                        </div>
-                       <!-- <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- Skills Section End -->
 
 
-
- <!-- Tools Section Start -->
-<section class="tools-section py-5 bg-light text-dark" skills="tools" id="tools">
-    <div class="container">
-        <h2 class="text-center mb-5">Tools</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <div class="col">
-                <div class="card bg-light text-dark h-100 text-center">
-                    <img src="images/tools/Python.png" class="card-img-top skill-icon" alt="Python">
-                    <div class="card-body">
-                        <h5 class="card-title">Python</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card bg-light text-dark h-100 text-center">
-                    <img src="images/tools/Excel-365Excel-2016-2019-Logo.png" class="card-img-top skill-icon" alt="Excel">
-                    <div class="card-body">
-                        <h5 class="card-title">Excel</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card bg-light text-dark h-100 text-center">
-                    <img src="images/tools/Logo-Tableau.png" class="card-img-top skill-icon" alt="Tableau">
-                    <div class="card-body">
-                        <h5 class="card-title">Tableau</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card bg-light text-dark h-100 text-center">
-                    <img src="images/tools/SQL.png" class="card-img-top skill-icon" alt="SQL">
-                    <div class="card-body">
-                        <h5 class="card-title">SQL</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Tools Section End -->
 
 
 
@@ -373,6 +174,8 @@ html {
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#home">My Portfolio</a>
+        <button id="translateBtn" class="btn btn-outline-primary me-3">Translate to French</button>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -404,5 +207,29 @@ html {
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("translateBtn").addEventListener("click", function() {
+            var enTexts = document.querySelectorAll("[data-lang='en']");
+            var frTexts = document.querySelectorAll("[data-lang='fr']");
+            var button = document.getElementById("translateBtn");
+    
+            // Bascule entre l'anglais et le français
+            enTexts.forEach(function(el) {
+                el.style.display = el.style.display === "none" ? "block" : "none";
+            });
+            frTexts.forEach(function(el) {
+                el.style.display = el.style.display === "none" ? "block" : "none";
+            });
+    
+            // Change le texte du bouton selon la langue
+            if (button.innerHTML === "Translate to French") {
+                button.innerHTML = "Translate to English";
+            } else {
+                button.innerHTML = "Translate to French";
+            }
+        });
+    </script>
+    
 </body>
 </html>
