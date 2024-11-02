@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="en">My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../summary.css">
+</head>
+
+<body>
+<!-- Contact Me Section Start -->
+
+<div class="content">
+    <section class="scooter-summary-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Segmentation d'utilisateurs de scooters </h2>
+            <hr class="section-divider">
+            
+            <div class="row justify-content-center my-4">
+                <div class="col-md-8">
+                    <img src="../images/projects/scooters.jpeg" class="img-fluid custom-image-size" alt="Emotion Detection Process">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mx-auto text-start">
+                    <p class="description-text">
+                    
+                    <p class="mb-4"> Dans ce projet, il s’agissait de dresser une segmentation de client de scooter à partir des notes attribuées 
+                        et d’informations personnelles comme l’âge, le sexe et la catégorie socio-professionnelle.</strong> </p> 
+                    
+                    <strong>Les questions auxquelles nous avons tenté de répondre étaient :</strong>
+                        <ul>
+                            <li>Quels sont les profils types d'utilisateurs de scooters en fonction des données démographiques et d’usage ?</li>
+                            <li>Quelles sont les différences d’utilisation des scooters entre hommes et femmes ?</li>
+                            <li>Quel type de scooter convient le mieux aux profils hommes et femmes ?</li>
+                        </ul>
+                    
+
+                        <div class="row justify-content-center my-4">
+                            <div class="col-md-8">
+                                <img src="../images/projects/batons.jpg" class="img-fluid " alt="Emotion Detection Process">
+                            </div>
+                        </div>
+
+                        
+                    <strong>Les étapes que nous avons suivies pour y parvenir :</strong>
+                        <ul>
+                            <li><strong>Préparation des données</strong> : Importation, traitement des données manquantes, et conversion des variables.</li>
+                            <li><strong>Analyse descriptive</strong> : Réalisation d’analyses univariées et bivariées pour obtenir un aperçu général.</li>
+                            <li><strong>Analyse factorielle et classification</strong> : Utilisation de l’ACP pour définir des axes de différenciation, suivi d’une classification hiérarchique pour créer des clusters.</li>
+                            <li><strong>Profilage et segmentation</strong> : Définition des profils clients en fonction des critères identifiés et des clusters obtenus.</li>
+                        </ul>
+
+
+
+                        
+                        <div class="row justify-content-center my-4">
+                            <div class="col-md-8">
+                                <img src="../images/projects/groupes.jpg" class="img-fluid " alt="Emotion Detection Process">
+                            </div>
+                        </div>
+                    
+                    <strong>Quelques résultats que nous avons obtenus :</strong>
+                        <ul>
+                            <li>4 types de clients ont été identifiés, segmentés principalement par la catégorie socio-professionnelle, le sexe et les préférences de cylindrée et d'esthétique.</li>
+                            <li>Les femmes préfèrent des scooters de plus petite cylindrée, au style sobre et rétro, tandis que les hommes favorisent des scooters de grosse cylindrée, innovants et rappelant les motos.</li>
+                            <li>Recommandations pour adapter le design des scooters en fonction des attentes spécifiques des différents groupes (ex : cylindrée et critères esthétiques).</li>
+                        </ul>
+                    </p>
+
+
+                 </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Me Section End -->
+
+    <!-- Sticky Navigation Bar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">My Portfolio</a>
+            <button id="translateBtn" class="btn btn-outline-primary me-3">Translate to French</button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sticky Navigation Bar End -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            document.getElementById("translateBtn").addEventListener("click", function() {
+                var enTexts = document.querySelectorAll("[data-lang='en']");
+                var frTexts = document.querySelectorAll("[data-lang='fr']");
+                var button = document.getElementById("translateBtn");
+        
+                // Bascule entre l'anglais et le français
+                enTexts.forEach(function(el) {
+                    el.style.display = el.style.display === "none" ? "block" : "none";
+                });
+                frTexts.forEach(function(el) {
+                    el.style.display = el.style.display === "none" ? "block" : "none";
+                });
+        
+                // Change le texte du bouton selon la langue
+                if (button.innerHTML === "Translate to French") {
+                    button.innerHTML = "Translate to English";
+                } else {
+                    button.innerHTML = "Translate to French";
+                }
+            });
+        </script>
+</div>  
+
+
+<footer class="contact-section text-center text-white bg-dark" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <p><i class="fas fa-envelope"></i> dokiengoue@gmail.com</p>
+            </div>
+            <div class="col-lg-6">
+                <p><i class="fas fa-phone"></i> +33786495345</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://www.linkedin.com/in/buani-doki-engoue-31b903193" target="_blank">
+                    <img src="../icons/linkedin.png" class="contact-icon mx-3" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="https://github.com/buanide" target="_blank">
+                    <img src="../icons/github.png" class="contact-icon mx-3" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
